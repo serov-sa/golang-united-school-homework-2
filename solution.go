@@ -16,9 +16,9 @@ import (
 type CustomType int
 
 const (
-	SideCircle   = iota
-	SideTriangle = iota + 2
-	SideSquare   = iota + 2
+	SidesCircle   = iota
+	SidesTriangle = iota + 2
+	SidesSquare   = iota + 2
 )
 
 func CalcSquare(sideLen float64, sidesNum CustomType) float64 {
