@@ -29,11 +29,11 @@ func CalcSquare(sideLen float64, sidesNum CustomType) float64 {
 	}
 
 	switch sidesNum {
-	case SideSquare:
+	case SidesSquare:
 		return math.Pow(sideLen, 2)
-	case SideTriangle:
+	case SidesTriangle:
 		return ((math.Pow(sideLen, 2)) * math.Sqrt(3)) / 4
-	case SideCircle:
+	case SidesCircle:
 		return math.Pow(sideLen, 2) * math.Pi
 	default:
 		fmt.Println("The sides are incorrect. Available options: 4, 3, 0")
